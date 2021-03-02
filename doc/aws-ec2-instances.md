@@ -79,11 +79,11 @@ While the theoritical peak consumption of the CPU (and thus the server) may be d
 
 ## Future improvements
 
-To improve this model in the future, we will:
+To improve this model in the future:
 
 - If we make use of TDP values in case of missing processor types in the SPECPower database, we may measure the correlation between the TDP and SPECPower measurements on different families of processor to ensure the use of TDP is correct enough.
-- Update the _Physical Instance Energy Consumption (kWh)_ metric using results from Teads and/or Thoughtworks measurements of AWS EC2 instances.
-- Adjust the estimation according to the utilization.
+- We will update the _Physical Instance Energy Consumption (kWh)_ metric using results from Teads and/or Thoughtworks measurements of AWS EC2 instances.
+- We will adjust the estimation according to the utilization.
 
 ## References
 
