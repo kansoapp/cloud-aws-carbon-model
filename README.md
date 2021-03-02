@@ -1,7 +1,11 @@
 # Carbon Data
 
-This repository consolidates all first-hand data we retrieved from the "real world" to feed our carbon estimation model(s).
+This repository contains the documentation of our carbon estimation approach and the datasets we built for our estimations.
+
+## Model documentation
+
+- [AWS EC2 instances](./doc/aws-ec2-instances.md)
 
 ## Datasets
 
-- [AWS EC2 CPU information](./aws-ec2-cpu-information/README.md)
+- [AWS EC2 CPU information](./data/aws-ec2-cpu-information/README.md)
