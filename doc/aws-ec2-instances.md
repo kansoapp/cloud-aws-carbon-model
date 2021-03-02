@@ -1,7 +1,7 @@
 # AWS EC2 carbon model
 
 ## Model overview
-We didn't re-invent the wheel to come up with this model and leverage the excellent work performed by Benjamin Davy and his team at Teads. Their work is well described in [this article](https://teads-engineering-web.s3.eu-west-1.amazonaws.com/aws_instance_specifications.csv.zip), referenced later as _TEADS01_.
+We didn't re-invent the wheel to come up with this model and leverage the excellent work performed by Benjamin Davy and his team at Teads. Their work is well described in [this article](https://medium.com/teads-engineering/evaluating-the-carbon-footprint-of-a-software-platform-hosted-in-the-cloud-e716e14e060c), referenced later as _TEADS01_.
 
 They came up with this formula to estimate emissions of EC2 instances:
 
