@@ -1,7 +1,7 @@
 # AWS EC2 carbon model
 
 ## Model overview
-We didn't re-invent the wheel to come up with this model and leverage the excellent work performed by Benjamin Davy and his team at Teads. Their work is well described in [this article](https://teads-engineering-web.s3.eu-west-1.amazonaws.com/aws_instance_specifications.csv.zip), referenced later as _TEADS01_.
+We didn't re-invent the wheel to come up with this model and leverage the excellent work performed by Benjamin Davy and his team at Teads. Their work is well described in [this article](https://medium.com/teads-engineering/evaluating-the-carbon-footprint-of-a-software-platform-hosted-in-the-cloud-e716e14e060c), referenced later as _TEADS01_.
 
 They came up with this formula to estimate emissions of EC2 instances:
 
@@ -79,11 +79,11 @@ While the theoritical peak consumption of the CPU (and thus the server) may be d
 
 ## Future improvements
 
-To improve this model in the future, we will:
+To improve this model in the future:
 
 - If we make use of TDP values in case of missing processor types in the SPECPower database, we may measure the correlation between the TDP and SPECPower measurements on different families of processor to ensure the use of TDP is correct enough.
-- Update the _Physical Instance Energy Consumption (kWh)_ metric using results from Teads and/or Thoughtworks measurements of AWS EC2 instances.
-- Adjust the estimation according to the utilization.
+- We will update the _Physical Instance Energy Consumption (kWh)_ metric using results from Teads and/or Thoughtworks measurements of AWS EC2 instances.
+- We will adjust the estimation according to the utilization.
 
 ## References
 
