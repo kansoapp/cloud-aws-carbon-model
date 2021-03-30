@@ -4,17 +4,45 @@ This repository contains the source code of the Kanso Carbon Model. You'll fin b
 
 Hereafter is the summary of this documentation.
 
-1. Modeling attempt on the carbon footprint of a data center
-2. xxx
+0. Modeling attempt on the carbon footprint of a data center
+1. Emissions from running the IT room of a data center
 
 
-## 1. Modeling attempt on the carbon footprint of a data center
+## 0. Modeling attempt on the carbon footprint of a data center
 
 For the sake of our estimation, we consider that the carbon footprint of a data center can be further subdivided in four different carbon footprints:
-* Emissions from running the data center (including IT equipments, air conditioning and electrical losses). Here we exclude any emission from offices in the data center, emissions due to the commuting of employees going to the data center, ...
-* Emissions from manufacturing IT equipments and air conditioners
-* Emissions from transferring data from the data center to other data centers and to the internet
-* Embodied emissions from building the data center
+1. Emissions from running the IT room of a data center
+2. Emissions from manufacturing IT equipments and air conditioners
+3. Emissions from transferring data from the data center to other data centers and to the internet
+4. Embodied emissions from building the data center
+
+
+## 1. Emissions from running the IT room of a data center
+
+Our model includes emissions due to IT equipments, air conditioning and electrical losses and is suddivided as emissions from:
+  * A. Running compute primitives (EC2)
+  * B. Running storage primitives (EBS, S3, ...)
+  * C. Running IT room network devices
+  * D. Air conditioning and electrical losses
+
+### A. Running compute primitives (EC2)
+
+This source is among the major sources of carbon emissions then we chose to have an approach based on several methods. As of today we have based our estimation model on two methods so the output of our model is a range of carbon emissions. We will keep updaing our model to enrich it with further methods and more recent data.
+
+#### A.1 Running compute primitives (EC2) - Teads & D. Guyon
+
+We've named this first approach after the work conducted by [Teads' engineering team](https://www.teads.com/) through [Estimating AWS EC2 Instances Power Consumption](https://medium.com/teads-engineering/estimating-aws-ec2-instances-power-consumption-c9745e347959) and David Guyon with his scientific research document [Supporting energy-awareness for cloud users. Networking and Internet Architecture](https://tel.archives-ouvertes.fr/tel-01973083/file/GUYON_David.pdf). We calculate emissions due to the run of compute primitives with the following formula:
+
+
+
+
+
+
+
+
+
+* [1] [Estimating AWS EC2 Instances Power Consumption](https://medium.com/teads-engineering/estimating-aws-ec2-instances-power-consumption-c9745e347959), Teads, March 2021
+* [2] David Guyon. [Supporting energy-awareness for cloud users. Networking and Internet Architecture](https://tel.archives-ouvertes.fr/tel-01973083/file/GUYON_David.pdf) [cs.NI]. Université Rennes 1, 2018. English. ffNNT : 2018REN1S037ff. fftel-01973083f
 
 ## Model documentation
 
