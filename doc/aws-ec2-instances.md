@@ -49,9 +49,9 @@ The limitations of this approach however are significative:
 - the configurations built for these measures are certainly far from the configurations used by AWS in their datacenters and we have no way of knowing the impact on the measurements (the CPU may be configured differently, many hardware components will differ, etc.),
 - the workload used for the SPECPower measurement protocol doesn't represent a real workload of a server in an AWS datacenter, which is unpredictable due to the mutualization of a server for many instances.
 
-However, this approach may still provide an interesting magnitude order and server as a first version of our estimate.
+However, this approach may still provide an interesting magnitude order and serve as a first version of our estimate.
 
-In cases where the instance CPU would not be matchable with a configuration present in the SPECPower database, we will have to rely on an even worse approximation. 
+In cases where the instance CPU could not be matched with a configuration present in the SPECPower database, we will have to rely on an even worse approximation. 
 
 ### TDP
 
@@ -59,11 +59,11 @@ According to this [research article](https://www.spec.org/power_ssj2008/results/
 
 As such, estimating the CPU's power consumption may also provide an approximation of the server's total consumption.
 
-There is only one information available from CPU manufacturers that enable to "guesstimate" the CPU consumption: the TDP, or Thermal Dissipation Power.
+There is only one information available from CPU manufacturers that enable to "guesstimate" the CPU consumption: the TDP, or Thermal Design Power.
 
 > Thermal Design Power (TDP) represents the average power, in watts, the processor dissipates when operating at Base Frequency with all cores active under an Intel-defined, high-complexity workload.
 
-Several articles indicates that, though it could be used as good proxy for energy consumption several years ago, it's not the case anymore.
+Several articles indicate that, though it could be used as a good proxy for energy consumption several years ago, it's not the case anymore.
 
   > For now, our advice is to take any published Intel high-end desktop TDP and multiply the claimed value by 1.5x – 3.3x for a more accurate estimate of peak CPU power consumption. Use 1.5x – 2.25x for regular high-end desktop CPUs, and 2.0x – 3.3x for lower power SKUs. This problem likely extends at least as far down the stack as the Core i5-10600 versus the Core i5-10600K. AMD reliably lands within or relatively near to its claimed TDP values, while Intel’s smallest measured excursion is nearly twice the size of AMD’s largest.
   
