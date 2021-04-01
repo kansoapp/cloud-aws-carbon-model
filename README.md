@@ -49,10 +49,12 @@ With:
 - *g* beeing the geographies where the observed cloud infrastructure have at least one instance running 
 - *v(i,g)* beeing the total volume of hours run by *i* instances in the *g* geography
 - *p(i)* beeing the power required by the instance's CPU at a standard 40%[3] server utilization
-- *c* beeing the 
+- *c(g)* beeing the carbon intensity of the geography *g* of the data center considered
 
 
-#### A.2 Running compute primitives (EC2) - The _Teads & D. Guyon's_ approach
+#### A.2 Running compute primitives (EC2) - The _NRDC's_ approach
+
+We have named this second approach after the report published by the Natural Resources Defense Council (NRDC) in 2014 called Data Center Efficiency Assessment. A part of their study is focused on the level of utilization of IT equipment and we could find , the impact of and potential for efficiency opportunities in multitenant data centers, and the degree to which the evolution of the industry’s technology and delivery model is aligning incentives to further drive energy efficiency
 
 
 
@@ -62,7 +64,7 @@ With:
 
 * [1] [Estimating AWS EC2 Instances Power Consumption](https://medium.com/teads-engineering/estimating-aws-ec2-instances-power-consumption-c9745e347959), Teads, March 2021
 * [2] David Guyon. [Supporting energy-awareness for cloud users. Networking and Internet Architecture](https://tel.archives-ouvertes.fr/tel-01973083/file/GUYON_David.pdf) [cs.NI]. Université Rennes 1, 2018. English. ffNNT : 2018REN1S037ff. fftel-01973083f
-* [3] 
+* [3] Data Center Efficiency Assessment, 2014, Appendix 2, NRDC.org
 
 ## Model documentation
 
