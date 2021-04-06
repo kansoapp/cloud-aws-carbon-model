@@ -1,14 +1,19 @@
 # Kanso Carbon Model
 
-This repository contains the source code of the Kanso Carbon Model. You'll fin below its documentation and the different scientific sources it refers to.
+This repository contains the source code of the Kanso Carbon Model whose goal is to estimate the carbon footprint associated with a given company's cloud infrastructure.
 
-Hereafter is the summary of this documentation.
+# Summary
+* Important disclaimer
+* Modeling attempt on the carbon footprint of a data center *(parts 1 to 4)*
+* Procedure to suggest changes and to enrich the methodology
+* Scientific sources this methodology is based on
 
-0. Modeling attempt on the carbon footprint of a data center
-1. Emissions from running the IT room of a data center
+------------------------------------------------------------------------
 
+# Important disclaimer
+TBC
 
-## 0. Modeling attempt on the carbon footprint of a data center
+# Modeling attempt on the carbon footprint of a data center
 
 For the sake of our estimation, we consider that the carbon footprint of a data center can be further subdivided in four different carbon footprints:
 1. Emissions from running the IT room of a data center
@@ -137,10 +142,19 @@ With:
 
 ##4. Embodied emissions from building the data center
 
+TBC
 
 
+# Procedure to suggest changes and to enrich the methodology
 
-----------------------------------------------------------
+
+TBC
+
+
+# Scientific sources this methodology is based on
+
+Below is the updated list of the different sources we used to build the Kanso Carbon Model:
+
 * [1] [Estimating AWS EC2 Instances Power Consumption](https://medium.com/teads-engineering/estimating-aws-ec2-instances-power-consumption-c9745e347959), Teads, March 2021
 * [2] [Supporting energy-awareness for cloud users. Networking and Internet Architecture](https://tel.archives-ouvertes.fr/tel-01973083/file/GUYON_David.pdf), David Guyon from Université Rennes 1, 2018
 * [3] [Data Center Efficiency Assessment](https://www.nrdc.org/sites/default/files/data-center-efficiency-assessment-IP.pdf), NRDC, 2014
@@ -150,14 +164,3 @@ With:
 * [7] [New perspectives on internet electricity use in 2030](https://www.researchgate.net/publication/342643762_New_perspectives_on_internet_electricity_use_in_2030), Anders S.G. Andrae, Huawei Technologies, June 2020
 * [8] [The life cycle assessment of a UK data centre](https://www.researchgate.net/publication/271710820_The_life_cycle_assessment_of_a_UK_data_centre), page 398, Beth Whitehead and Deborah Andrews, March 2015
 * [9] [The carbon footprint of streaming video: fact-checking the headlines](https://www.iea.org/commentaries/the-carbon-footprint-of-streaming-video-fact-checking-the-headlines), George Kamiya, IEA, December 2020
-
-
-
-
-## Model documentation
-
-- [AWS EC2 instances](./doc/aws-ec2-instances.md)
-
-## Datasets
-
-- [AWS EC2 CPU information](./data/aws-ec2-cpu-information/README.md)
