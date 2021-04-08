@@ -114,7 +114,7 @@ We approached the energy consumed by the physical machines by estimating A and B
 
 ![image](https://user-images.githubusercontent.com/8396084/113705649-fc506c80-96dd-11eb-8cc1-b109e68b1887.png)
 
-
+*N.B: Discussions with experts pointed out that the energy split has evolved towards 85%/15% or even 90%/10%. Yet as we didn't find any written source backed by a scientific approach, we chose to keep the 70%/30% ratio.*
 
 ### D. Air conditioning and electrical losses
 
