@@ -21,13 +21,13 @@ We have dedicated a part of this *readme* to the *Procedure to suggest changes t
 # 🧮 Modeling attempt on the carbon footprint related to the consumption of data center's services
 
 For the sake of our estimation, we consider that the carbon footprint of a data center can be further subdivided in four different carbon footprints:
-1. Emissions from running a data center
+1. Emissions from consuming public cloud's services
 2. Emissions from manufacturing IT equipments and air conditioners
 3. Emissions from transferring data from the data center to other data centers and to the internet
 4. Embodied emissions from building the data center
 
 
-## 1. Emissions from running a data center
+## 1. Emissions from consuming public cloud's services
 
 Our model is limited to emissions due to IT equipments, air conditioning and electrical losses and is suddivided as emissions from:
   * A. Running compute primitives (EC2)
@@ -61,7 +61,7 @@ We have determined the *Share of the CPU in the energy consumption of the Physic
 
 Then the rest of the calculation stands as following:
 
-![A 1 2](https://user-images.githubusercontent.com/8396084/113698547-decad500-96d4-11eb-8e7e-ba921a5c0fe7.jpg)
+![image](https://user-images.githubusercontent.com/8396084/114671888-de4dc200-9d04-11eb-9607-4b023395860a.png)
 
 
 
@@ -79,13 +79,13 @@ We have named this second approach after the report published by the Natural Res
 
 Then, we calculate A.2 as below:
 
-![A 2](https://user-images.githubusercontent.com/8396084/113691744-12096600-96cd-11eb-8016-70f6f26b91cd.jpg)
+![image](https://user-images.githubusercontent.com/8396084/114672734-c0cd2800-9d05-11eb-8f6c-bec0ea010a67.png)
 
 With:
 - *i* beeing the type of instance considered (c5, m5, r5, ...)
 - *g* beeing the geographies where the observed cloud infrastructure have at least one instance running 
 - *v(i,g)* beeing the total volume of hours run by *i* instances in the *g* geography
-- *r(i)* beeing the instance ratio of the instance considered (for example, a r5 instance has an *instance ratio* of 1/96)
+- *r(i)* beeing the instance ratio. The instance ratio is the ratio between the vCPU allocated when the *i* instance is beeing consumed divided by the total vCPU available on the physical machine. For example, a r5 instance has an *instance ratio* of 1/96.
 - *c(g)* beeing the carbon intensity of the electricity in the geography *g* where the considered data center is located
 
 
@@ -154,7 +154,7 @@ With:
 Approaching the emissions embodied from building the data center is complex as data centers construction processes are very different from a technology to another. Hence we chose to approach it using the *x* ratio we already used in the part 2. To do so we used the work conducted conducted by Beth Whitehead and Deborah Andrews in March 2015 (see [8]) stating that:
 > operational figures for a standard 50-year building life cycle yielded values of between 70 and 80% of the overall impact.
 
-We assumed that the emobied emissions from building the data center counted for 20-30% of the total life cycle assessment so we worked with the following formula:
+We assumed that the embodied emissions from building the data center counted for 20-30% of the total life cycle assessment so we worked with the following formula:
 
 ![image](https://user-images.githubusercontent.com/8396084/113836134-e77ee200-978c-11eb-9be0-cb32573eae4a.png)
 
