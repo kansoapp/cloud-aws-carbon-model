@@ -14,7 +14,7 @@ This repository contains the source code of the Kanso Carbon Model whose goal is
 
 Tens of hours were spent to gather the scientific sources we neeeded and to build this methodology. Yet hundreds of hours would have possibly been needed to bring a more accurate method! One of our core principles at [Kanso](http://www.kansoapp.com) is that *understanding precedes action* so we favoured to build a model which is super easy to deploy within companies to maximize the spreading of the word and the *understanding*.
 
-We have dedicated a part of this *readme* to the *Procedure to suggest changes to enrich the methodology* to ensure the update process is clear and easy for people willing to contribute. Additionally records of changes are beeing kept in this same part.
+We have dedicated a part of this *readme* to the *Procedure to suggest changes to enrich the methodology* to ensure the update process is clear and easy for people willing to contribute. Additionally records of changes are being kept in this same part.
 
 
 
