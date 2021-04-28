@@ -3,16 +3,20 @@
 This repository contains the source code of the Kanso Carbon Model whose goal is to estimate the carbon footprint associated with a given company's cloud infrastructure. In this readme file we tried to spell out as clearly as possible the methodology we built to approach the estimation.
 
 # 📖 Summary
-* 📌 **Important disclaimer**
-* 🧮 **Modeling attempt on the carbon footprint related to the consumption of data center's services *(4 parts)***
-* 🙏 **Procedure to suggest changes to enrich the methodology & record of past changes**
-* 🧬 **Scientific sources this methodology is based on**
+📌 **Important disclaimer**
+🧮 **Modeling attempt on the carbon footprint related to the consumption of data center's services *(4 parts)***
+🙏 **Procedure to suggest changes to enrich the methodology & record of past changes**
+🧬 **Scientific sources this methodology is based on**
+
+
 
 ------------------------------------------------------------------------
 
+
+
 # 📌 Important disclaimer
 
-Tens of hours were spent to gather the scientific sources we neeeded and to build this methodology. Yet hundreds of hours would have possibly been needed to bring a more accurate method! One of our core principles at [Kanso](http://www.kansoapp.com) is that *understanding precedes action* so we favoured to build a model which is super easy to deploy within companies to maximize the spreading of the word and the *understanding*.
+Tens of hours were spent to gather the scientific sources we needed to build this methodology. Yet hundreds of hours would have possibly been needed to bring a more accurate method! One of our core principles at [Kanso](http://www.kansoapp.com) is that *understanding precedes action* so we favoured to build a model which is super easy to deploy within companies to maximize the spreading of the word and the *understanding*.
 
 We have dedicated a part of this *readme* to the *Procedure to suggest changes to enrich the methodology* to ensure the update process is clear and easy for people willing to contribute. Additionally records of changes are being kept in this same part.
 
@@ -20,16 +24,16 @@ We have dedicated a part of this *readme* to the *Procedure to suggest changes t
 
 # 🧮 Modeling attempt on the carbon footprint related to the consumption of data center's services
 
-For the sake of our estimation, we consider that the carbon footprint of a data center can be further subdivided in four different carbon footprints:
+For the sake of our estimation, we consider that the carbon footprint related to public cloud's services can be further subdivided in four different carbon footprints:
 1. Emissions from consuming public cloud's services
 2. Emissions from manufacturing IT equipments and air conditioners
-3. Emissions from transferring data from the data center to other data centers and to the internet
+3. Emissions from transferring data from a data center to other data centers and to the internet
 4. Embodied emissions from building the data center
 
 
 ## 1. Emissions from consuming public cloud's services
 
-Our model is limited to emissions due to IT equipments, air conditioning and electrical losses and is suddivided as emissions from:
+Our model is limited to emissions due to IT equipments, air conditioning and electrical losses and is subdivided as emissions from:
   * A. Running compute primitives (EC2)
   * B. Running storage primitives (EBS, S3, ...)
   * C. Running IT room network devices
@@ -43,9 +47,6 @@ This source is among the major sources of carbon emissions then we chose to have
 * we have based our estimation model on two methods so the output is a range of carbon emissions.
 * we assumed the underlying data centers are *hyper-scale*. We know there is a gap between this assumption and the reality but the gap is closing as more and more data centers in the world are *hyper-scale* (see [4]).
 * both our methods use the *average server utilization in a hyper-scale data center*. The NRDC 2014 report (see [3]) shows this figure is equal to 40% while the report produced by the Berkeley National Laboratory (see [6]) relates 50%.
-
-
-We will keep on updating our model to enrich it with further methods and more recent data.
 
 
 #### A.1 Running compute primitives (EC2) - The _Teads & D. Guyon's_ approach
@@ -97,7 +98,7 @@ To estimate the energy consumed by storage primitives, we used the research work
 * 1.52 Wh/TBh for SSD storage
 
 We are interested in the order of magnitude so we estimate the emissions due to running the storage primitives as follows:
-![image](https://user-images.githubusercontent.com/8396084/113697759-efc71680-96d3-11eb-8830-a957553b8c09.png)
+![image](https://user-images.githubusercontent.com/8396084/116392157-657c5900-a820-11eb-9f1c-91c11d78a273.png)
 With:
 - *g* beeing the geographies where the observed cloud infrastructure have at least one storage primitive
 - *d(g)* beeing the volume of data stored multiplied by the duration of storage in the *g* geography: ![image](https://user-images.githubusercontent.com/8396084/113698155-711ea900-96d4-11eb-8763-9660b2fefcdf.png)
@@ -131,12 +132,12 @@ This ratio that we call *x* is sometimes documented and comparable between diffe
 
 Then we chose to calculate *emissions from manufacturing IT equipments and air conditioners* with *x*=0.25 (doing so we assume that the *x* ratio is also valid for air conditioners).
 
-## 3. Emissions from transferring data from the data center to other data centers and to the internet
+## 3. Emissions from transferring data from a data center to other data centers and to the internet
 
 We used data from an article published by George Kamiya on the IEA's website (see [9]) pointing out that we can use the [0.025 kWh/GB; 0.23 kWh/GB] range for our Data Transmission Energy Intensity.
 
 Hence we obtain the following formula to estimate the emissions that occur when transferring data between data centers and between a data center and the internet:
-![image](https://user-images.githubusercontent.com/8396084/113712906-0165e980-96e7-11eb-83f8-317b242ccb11.png)
+![image](https://user-images.githubusercontent.com/8396084/116392551-dae82980-a820-11eb-8a73-ca7935cef450.png)
 
 
 With:
