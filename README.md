@@ -3,10 +3,10 @@
 This repository contains the source code of the Kanso Carbon Model whose goal is to estimate the carbon footprint associated with a given company's cloud infrastructure. In this readme file we tried to spell out as clearly as possible the methodology we built to approach the estimation.
 
 # 📖 Summary
-📌 **Important disclaimer**
-🧮 **Modeling attempt on the carbon footprint related to the consumption of data center's services *(4 parts)***
-🙏 **Procedure to suggest changes to enrich the methodology & record of past changes**
-🧬 **Scientific sources this methodology is based on**
+* 📌 **Important disclaimer**
+* 🧮 **Modeling attempt on the carbon footprint related to the consumption of data center's services *(4 parts)***
+* 🙏 **Procedure to suggest changes to enrich the methodology & record of past changes**
+* 🧬 **Scientific sources this methodology is based on**
 
 
 
